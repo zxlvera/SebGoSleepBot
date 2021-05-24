@@ -20,7 +20,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     
-    if message.content == 'hello':
+    if message.author.id == '772254027656200222':
         tz = pytz.timezone('Europe/Paris')
         fmt = '%H:%M'
         timeNow = datetime.now(tz)
