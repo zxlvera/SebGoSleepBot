@@ -29,4 +29,7 @@ async def on_message(message):
         else:
             return
 
+    if message.content.lower() == 'oui':
+        await message.add_reaction('🇫🇫')
+
 client.run(TOKEN)
