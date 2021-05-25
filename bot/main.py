@@ -30,8 +30,9 @@ async def on_message(message):
             return
 
     if message.content.lower() == 'oui':
+        number_res = 4
         emojis = ["🇫🇷", "🥖", "🥐", "🍷"]
-        for i in len(emojis):
+        for i in range(number_res):
             await message.add_reaction(emojis[i])
 
 client.run(TOKEN)
