@@ -29,7 +29,7 @@ async def on_message(message):
         else:
             return
 
-    french_words = ['french', 'oui', 'ouais', 'baguette', 'croissant', 'wine', 'francais', 'français']
+    french_words = ['bonjour', 'french', 'oui', 'ouais', 'baguette', 'croissant', 'wine', 'francais', 'français']
     if any(s in message.content.lower() for s in french_words):
     # if 'oui' in message.content.lower():
         number_res = 4
