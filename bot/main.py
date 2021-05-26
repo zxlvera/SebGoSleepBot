@@ -29,8 +29,8 @@ async def on_message(message):
         else:
             return
 
-    french_words = ['oui', 'ouais']
-    if any(s in l for l in message.content.lower() for s in french_words):
+    french_words = ['oui', 'ouais', 'baguette', 'croissant', 'wine', 'vin', 'francais', 'français']
+    if any(s in message.content.lower() for s in french_words):
     # if 'oui' in message.content.lower():
         number_res = 4
         emojis = ["🇫🇷", "🥖", "🥐", "🍷"]
